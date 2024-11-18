@@ -58,8 +58,6 @@ Um sistema completo para criação, listagem, edição e exclusão de currículo
 │   ├── utils/
 │   │   ├── alerts.php
 │   │   └── password_strength.php
-├── composer.json
-├── composer.lock
 ├── criar_curriculo.php
 ├── editar_curriculo.php
 ├── listar_curriculos.php
