@@ -39,14 +39,17 @@ Um sistema completo para criação, listagem, edição e exclusão de currículo
 ├── assets/
 │   ├── css/
 │   │   ├── login.css
+│   │   ├── preview.css
 │   │   ├── register.css
 │   │   └── style.css
 │   ├── js/
+│   │   ├── preview.js
 │   │   └── register.js
 ├── src/
 │   ├── controllers/
 │   │   ├── login_user.php
 │   │   ├── register_user.php
+│   │   ├── gerar_pdf.php
 │   │   ├── salvar_curriculo.php
 │   │   ├── atualizar_curriculo.php
 │   │   └── deletar_curriculo.php
@@ -55,9 +58,13 @@ Um sistema completo para criação, listagem, edição e exclusão de currículo
 │   ├── utils/
 │   │   ├── alerts.php
 │   │   └── password_strength.php
+├── composer.json
+├── composer.lock
 ├── criar_curriculo.php
 ├── editar_curriculo.php
 ├── listar_curriculos.php
+├── generate_pdf.php
 ├── login.php
+├── logout.php
 ├── register.php
 └── index.php
