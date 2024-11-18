@@ -24,6 +24,10 @@ if (isset($_GET['success']) && $_GET['success'] === 'login') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -33,6 +37,23 @@ if (isset($_GET['success']) && $_GET['success'] === 'login') {
             <a href="criar_curriculo.php">Criar Currículo</a>
             <a href="listar_curriculos.php">Meus Currículos</a>
             <a href="logout.php">Sair</a>
+            <!-- Botão para alternar tema -->
+            <div class="theme-toggle-container">
+                <div class="theme-toggle" id="theme-toggle">
+                    <span class="toggle-thumb">
+                        <i class="bi bi-sun theme-icon" id="theme-icon"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="menu-dropdown">
+                <button class="menu-button" id="menu-button">☰</button>
+                <ul class="dropdown-content" id="dropdown-content">
+                    <li><a href="configuracoes.php">Configurações</a></li>
+                    <li><a href="perfil.php">Perfil</a></li>
+                    <li><a href="ajuda.php">Ajuda e Suporte</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -44,5 +65,9 @@ if (isset($_GET['success']) && $_GET['success'] === 'login') {
     <footer>
         <p>&copy; 2024 Gerador de Currículos. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Importar o script externo -->
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
 </body>
 </html>

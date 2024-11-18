@@ -34,7 +34,7 @@ h1 {
     color: var(--text-color);
 }
 
-/* Cabeçalho Fixo e Compacto */
+/* Cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -49,18 +49,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-}
-
-/* Espaçamento para o Conteúdo (Evitar Sobreposição) */
-main {
-    padding-top: 70px;
-}
-
-/* Título */
-header h1 {
-    font-size: 18px;
-    margin: 0;
-    font-family: 'Moderustic', serif;
 }
 
 nav {
@@ -157,7 +145,7 @@ nav a:hover {
     content: "\f185"; /* Ícone de sol */
 }
 
-/* Contêiner do Menu Dropdown */
+/* Estilo do Menu Suspenso */
 .menu-dropdown {
     position: relative;
     display: inline-block;
@@ -221,17 +209,61 @@ nav a:hover {
     display: block;
 }
 
-/* Área Principal */
+/* Main */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: var(--card-background-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px var(--box-shadow-color);
+    margin-top: 150px;
 }
 
-main p {
-    line-height: 1.6;
-    color: var(--text-color);
+/* Tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--secondary-color); /* Fundo diferente do background */
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+}
+
+table th {
+    background-color: var(--primary-hover-color); /* Destaque no cabeçalho */
+    color: var(--card-background-color);
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--card-background-color); /* Linhas pares */
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--background-color); /* Linhas ímpares */
+}
+
+table tr:hover {
+    background-color: var(--accent-color); /* Destaque ao passar o mouse */
+    color: var(--card-background-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.edit-button {
+    background-color: var(--primary-hover-color);
+}
+
+.delete-button {
+    background-color: #cc0000;
+}
+
+.download-button {
+    background-color: #28a745;
 }

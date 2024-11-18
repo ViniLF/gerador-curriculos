@@ -51,11 +51,6 @@ header {
     height: 50px;
 }
 
-/* Espaçamento para o Conteúdo (Evitar Sobreposição) */
-main {
-    padding-top: 70px;
-}
-
 /* Título */
 header h1 {
     font-size: 18px;
@@ -221,17 +216,53 @@ nav a:hover {
     display: block;
 }
 
-/* Área Principal */
-main {
-    max-width: 800px;
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin: 20px auto;
+    max-width: 800px;
     background-color: var(--card-background-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px var(--box-shadow-color);
 }
 
-main p {
-    line-height: 1.6;
+form label {
+    font-weight: bold;
     color: var(--text-color);
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--card-background-color);
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--card-background-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--primary-hover-color);
 }

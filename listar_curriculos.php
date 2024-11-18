@@ -27,7 +27,10 @@ $result = $stmt->get_result();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/listar_curriculos.css">
 </head>
 <body>
     <header>
@@ -36,6 +39,23 @@ $result = $stmt->get_result();
             <a href="index.php">Início</a>
             <a href="criar_curriculo.php">Criar Currículo</a>
             <a href="logout.php">Sair</a>
+            <!-- Botão para alternar tema -->
+            <div class="theme-toggle-container">
+                <div class="theme-toggle" id="theme-toggle">
+                    <span class="toggle-thumb">
+                        <i class="bi bi-sun theme-icon" id="theme-icon"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="menu-dropdown">
+                <button class="menu-button" id="menu-button">☰</button>
+                <ul class="dropdown-content" id="dropdown-content">
+                    <li><a href="configuracoes.php">Configurações</a></li>
+                    <li><a href="perfil.php">Perfil</a></li>
+                    <li><a href="ajuda.php">Ajuda e Suporte</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -74,5 +94,7 @@ $result = $stmt->get_result();
             <p>Você ainda não criou nenhum currículo.</p>
         <?php endif; ?>
     </main>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
 </body>
 </html>
