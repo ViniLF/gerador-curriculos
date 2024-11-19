@@ -91,7 +91,7 @@ $result = $stmt->get_result();
                 </tbody>
             </table>
         <?php else: ?>
-            <p>Você ainda não criou nenhum currículo.</p>
+            <p style>Você ainda não criou nenhum currículo.</p>
         <?php endif; ?>
     </main>
     <script src="assets/js/index.js"></script>

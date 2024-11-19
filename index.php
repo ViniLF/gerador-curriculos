@@ -57,11 +57,35 @@ if (isset($_GET['success']) && $_GET['success'] === 'login') {
         </nav>
     </header>
     <main>
-        <h2>Página Inicial</h2>
-        <p>Você está logado no sistema. Aqui você pode criar novos currículos ou acessar os já criados.</p>
-        <a href="criar_curriculo.php" class="button">Criar Novo Currículo</a>
-        <a href="listar_curriculos.php" class="button">Ver Meus Currículos</a>
+        <section class="welcome">
+            <h2>Bem-vindo, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</h2>
+            <p>Estamos felizes em tê-lo aqui. Aproveite para criar novos currículos ou gerenciar os já existentes.</p>
+        </section>
+
+        <section class="quick-actions">
+            <h3>Ações Rápidas</h3>
+            <div class="action-buttons">
+                <a href="criar_curriculo.php" class="button">Criar Novo Currículo</a>
+                <a href="listar_curriculos.php" class="button">Gerenciar Currículos</a>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h3>Dicas para Melhorar Seu Currículo</h3>
+            <ul>
+                <li>Use palavras-chave relevantes para sua área de atuação.</li>
+                <li>Mantenha o design limpo e profissional.</li>
+                <li>Adapte o currículo para cada vaga que está concorrendo.</li>
+            </ul>
+        </section>
+
+        <section class="highlights">
+            <h3>Novidades!</h3>
+            <p>Experimente o novo tema "Minimalista" para criar currículos mais modernos e profissionais.</p>
+            <a href="criar_curriculo.php" class="button">Experimentar Agora</a>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Gerador de Currículos. Todos os direitos reservados.</p>
     </footer>

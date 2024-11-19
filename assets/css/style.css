@@ -51,11 +51,6 @@ header {
     height: 50px;
 }
 
-/* Espaçamento para o Conteúdo (Evitar Sobreposição) */
-main {
-    padding-top: 70px;
-}
-
 /* Título */
 header h1 {
     font-size: 18px;
@@ -223,9 +218,10 @@ nav a:hover {
 
 /* Área Principal */
 main {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1300px;
+    margin: 100px auto;
     background-color: var(--card-background-color);
+    padding-top: 70px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px var(--box-shadow-color);
@@ -234,4 +230,24 @@ main {
 main p {
     line-height: 1.6;
     color: var(--text-color);
+}
+
+/* Footer Geral */
+footer {
+    background-color: var(--secondary-color); /* Fundo do footer */
+    color: var(--text-color); /* Cor do texto */
+    text-align: center; /* Centralizar o conteúdo */
+    padding: 15px 20px; /* Espaçamento interno */
+    border-top: 1px solid var(--accent-color); /* Linha no topo do footer */
+    font-size: 14px; /* Tamanho do texto */
+    font-family: 'Faculty Glyphic', sans-serif; /* Fonte padronizada */
+    position: relative; /* Alterar para 'fixed' se quiser fixar no final */
+}
+
+/* Espaçamento no Modo Responsivo */
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Ajustar o tamanho da fonte em telas pequenas */
+        padding: 10px 15px;
+    }
 }

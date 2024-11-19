@@ -216,10 +216,10 @@ main {
 
 /* Tabela */
 table {
-    width: 100%;
-    margin-top: 20px;
+    width: 90%;
+    margin-top: 50px auto;
     border-collapse: collapse;
-    background-color: var(--secondary-color); /* Fundo diferente do background */
+    background-color: var(--secondary-color);
     border: 1px solid var(--accent-color);
     box-shadow: 0 4px 8px var(--box-shadow-color);
 }
@@ -231,21 +231,21 @@ table th, table td {
 }
 
 table th {
-    background-color: var(--primary-hover-color); /* Destaque no cabeçalho */
+    background-color: var(--primary-hover-color);
     color: var(--card-background-color);
     text-transform: uppercase;
 }
 
 table tr:nth-child(even) {
-    background-color: var(--card-background-color); /* Linhas pares */
+    background-color: var(--card-background-color);
 }
 
 table tr:nth-child(odd) {
-    background-color: var(--background-color); /* Linhas ímpares */
+    background-color: var(--background-color);
 }
 
 table tr:hover {
-    background-color: var(--accent-color); /* Destaque ao passar o mouse */
+    background-color: var(--accent-color);
     color: var(--card-background-color);
 }
 
